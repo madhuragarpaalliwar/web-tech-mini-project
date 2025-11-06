@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Design</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-container">
+      <div class="logo-container">
+        <h1 class="logo">flakes</h1>
+      </div>
+
+      <div class="menu-container">
+        <ul class="menu-list">
+          <li class="menu-list-item active">Home</li>
+          <li class="menu-list-item">Movies</li>
+          <li class="menu-list-item">Series</li>
+          <li class="menu-list-item">Popular</li>
+          <li class="menu-list-item">Trends</li>
+        </ul>
+      </div>
+
+      <div class="profile-container">
+        <img class="profile-picture" src="profile.jpg" alt="">
+        <div class="profile-text-container">
+          <span class="profile-text">Profile</span>
+          <i class="fas fa-caret-down"></i>
+        </div>
+        <div class="toggle">
+          <i class="fas fa-moon toggle-icon"></i>
+          <i class="fas fa-sun toggle-icon"></i>
+          <div class="toggle-ball"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <i class="left-menu-icon fas fa-search"></i>
+    <i class="left-menu-icon fas fa-home"></i>
+    <i class="left-menu-icon fas fa-users"></i>
+    <i class="left-menu-icon fas fa-bookmark"></i>
+    <i class="left-menu-icon fas fa-tv"></i>
+    <i class="left-menu-icon fas fa-hourglass-start"></i>
+    <i class="left-menu-icon fas fa-shopping-cart"></i>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="content-container">
+
+      <!-- Search Section -->
+      <div class="search-section">
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search movies..." />
+          <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+      </div>
+
+      <!-- Featured Content -->
+      <div class="featured-content"
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('f-1.jpg');">
+        <img class="featured-title" src="f-t-1.png" alt="">
+        <p class="featured-desc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis minima voluptatibus incidunt.
+        </p>
+        <button class="featured-button">WATCH</button>
+      </div>
+
+      <!-- NEW RELEASES (full row; swipeable) -->
+      <div class="movie-list-container">
+        <h1 class="movie-list-title">NEW RELEASES</h1>
+        <div class="movie-list-wrapper">
+          <button class="arrow-left"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-list">
+            <!-- ensure these image files exist in your folder -->
+            <div class="movie-list-item"><img class="movie-list-item-img" src="1.jpeg" alt=""><span class="movie-list-item-title">Her</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="2.jpeg" alt=""><span class="movie-list-item-title">Star Wars</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="3.jpg" alt=""><span class="movie-list-item-title">Storm</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="4.jpg" alt=""><span class="movie-list-item-title">1917</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="5.jpg" alt=""><span class="movie-list-item-title">Avengers</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="6.jpg" alt=""><span class="movie-list-item-title">Her</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="7.jpg" alt=""><span class="movie-list-item-title">Her 2</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="8.jpg" alt=""><span class="movie-list-item-title">Oblivion</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="9.jpg" alt=""><span class="movie-list-item-title">Hobbit</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="10.jpg" alt=""><span class="movie-list-item-title">Due Date</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="11.jpg" alt=""><span class="movie-list-item-title">Title 11</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="12.jpg" alt=""><span class="movie-list-item-title">Title 12</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="13.jpg" alt=""><span class="movie-list-item-title">Title 13</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="14.jpg" alt=""><span class="movie-list-item-title">Title 14</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="15.jpg" alt=""><span class="movie-list-item-title">Title 15</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="16.jpg" alt=""><span class="movie-list-item-title">Title 16</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="17.jpg" alt=""><span class="movie-list-item-title">Title 17</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="18.jpg" alt=""><span class="movie-list-item-title">Title 18</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="19.jpg" alt=""><span class="movie-list-item-title">Title 19</span></div>
+          </div>
+          <button class="arrow-right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Second Featured -->
+      <div class="featured-content"
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('f-2.jpg');">
+        <img class="featured-title" src="f-t-2.png" alt="">
+        <p class="featured-desc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis minima voluptatibus incidunt.
+        </p>
+        <button class="featured-button">WATCH</button>
+      </div>
+
+      <!-- HOLLYWOOD -->
+      <div class="movie-list-container">
+        <h1 class="movie-list-title">HOLLYWOOD</h1>
+        <div class="movie-list-wrapper">
+          <button class="arrow-left"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-list">
+            <div class="movie-list-item"><img class="movie-list-item-img" src="8.jpg" alt=""><span class="movie-list-item-title">Oblivion</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="9.jpg" alt=""><span class="movie-list-item-title">Hobbit</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="10.jpg" alt=""><span class="movie-list-item-title">Due Date</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="11.jpg" alt=""><span class="movie-list-item-title">Kick-Ass2</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="12.jpg" alt=""><span class="movie-list-item-title">The Emoji</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="13.jpg" alt=""><span class="movie-list-item-title">Title 13</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="14.jpg" alt=""><span class="movie-list-item-title">Title 14</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="15.jpg" alt=""><span class="movie-list-item-title">Title 15</span></div>
+          </div>
+          <button class="arrow-right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- ANIMATED -->
+      <div class="movie-list-container">
+        <h1 class="movie-list-title">ANIMATED</h1>
+        <div class="movie-list-wrapper">
+          <button class="arrow-left"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-list">
+            <div class="movie-list-item"><img class="movie-list-item-img" src="19.jpg" alt=""><span class="movie-list-item-title">Toy Story</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="17.jpg" alt=""><span class="movie-list-item-title">Frozen</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="13.jpg" alt=""><span class="movie-list-item-title">Coco</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="14.jpg" alt=""><span class="movie-list-item-title">Title A4</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="10.jpg" alt=""><span class="movie-list-item-title">Title A5</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="11.jpg" alt=""><span class="movie-list-item-title">Title A6</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="7.jpg" alt=""><span class="movie-list-item-title">Title A7</span></div>
+          </div>
+          <button class="arrow-right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- POPULAR -->
+      <div class="movie-list-container">
+        <h1 class="movie-list-title">POPULAR</h1>
+        <div class="movie-list-wrapper">
+          <button class="arrow-left"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-list">
+            <div class="movie-list-item"><img class="movie-list-item-img" src="16.jpg" alt=""><span class="movie-list-item-title">Interstellar</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="12.jpg" alt=""><span class="movie-list-item-title">Inception</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="8.jpg" alt=""><span class="movie-list-item-title">Tenet</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="15.jpg" alt=""><span class="movie-list-item-title">Title P4</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="6.jpg" alt=""><span class="movie-list-item-title">Title P5</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="19.jpg" alt=""><span class="movie-list-item-title">Title P6</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="4.jpg" alt=""><span class="movie-list-item-title">Title P7</span></div>
+          </div>
+          <button class="arrow-right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- TRENDS -->
+      <div class="movie-list-container">
+        <h1 class="movie-list-title">TRENDS</h1>
+        <div class="movie-list-wrapper">
+          <button class="arrow-left"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-list">
+            <div class="movie-list-item"><img class="movie-list-item-img" src="18.jpg" alt=""><span class="movie-list-item-title">Venom</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="15.jpg" alt=""><span class="movie-list-item-title">Black Panther</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="3.jpg" alt=""><span class="movie-list-item-title">Joker</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="7.jpg" alt=""><span class="movie-list-item-title">Title T4</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="11.jpg" alt=""><span class="movie-list-item-title">Title T5</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="19.jpg" alt=""><span class="movie-list-item-title">Title T6</span></div>
+            <div class="movie-list-item"><img class="movie-list-item-img" src="17.jpg" alt=""><span class="movie-list-item-title">Title T7</span></div>
+          </div>
+          <button class="arrow-right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
